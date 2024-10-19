@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Correct and Translate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <textarea id="textInput" placeholder="Type your text here..."></textarea>
+        <div class="btn-container">
+            <button onclick="autoCorrectText()">Auto Correct</button>
+            <button onclick="showLanguageSelect()">Translate</button>
+        </div>
+        <div class="language-select-container" id="languageSelectContainer" style="display: none;">
+            <select id="languageSelect" multiple>
+                <option value="hi">Hindi</option>
+                <option value="ta">Tamil</option>
+                <option value="te">Telugu</option>
+                <option value="kn">Kannada</option>
+                <option value="ml">Malayalam</option>
+                <option value="gu">Gujarati</option>
+                <!-- Add more Indian languages as needed -->
+            </select>
+            <button onclick="translateText()">Submit Translation</button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+  
+
+
+
